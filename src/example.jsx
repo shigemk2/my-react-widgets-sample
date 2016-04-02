@@ -1,13 +1,14 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Name = React.createClass({
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Name = React.createClass({
     render: function() {
         return (
             <span>{this.props.name}</span>
         );
     }
 });
-var HelloWorld = React.createClass({
+const HelloWorld = React.createClass({
     render: function() {
         return (
             <div>
