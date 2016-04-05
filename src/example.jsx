@@ -8,7 +8,11 @@ const HelloWorld = React.createClass({
         var colors = ['orange', 'red', 'blue', 'purple'];
         return (
             <div>
-                <DropdownList defaultValue={"orange"} data={colors}/>
+                <DropdownList
+                    defaultValue={"orange"}
+                    onSelect={() => alert('selected!')}
+                    onChange={() => alert('changed!')}
+                    data={colors}/>
             </div>
         );
     }
